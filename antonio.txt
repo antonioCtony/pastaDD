@@ -1,10 +1,50 @@
+ 
+            double reaju; 
+            double valor;
+            double salario;
 
-            for (int i = 101; i < 1000; i--)
+
+            Console.WriteLine("digite o valor do funcionario ");
+            for (int i = 0; i < 4; i++)
             {
 
-                Console.WriteLine(" etec ");
-               
 
+
+
+                
+                salario = double.Parse(Console.ReadLine());
+
+
+                if (salario <= 300)
+                {
+
+                    reaju = salario + (salario * 50 / 100.00);
+                    Console.WriteLine("salario é " + reaju);
+                }
+
+                else if (salario > 300 && salario <= 600)
+                {
+
+                    reaju = salario + (salario * 30 / 100.00);
+                    Console.WriteLine("seu salario é" + reaju);
+                }
+
+                else if (salario > 600)
+                {
+
+                    reaju = salario + (salario * 80 / 100.00);
+                    Console.WriteLine("seu salario é" + reaju);
+                }
             }
             Console.ReadLine();
-antonio 
+
+
+
+
+
+
+            }
+        }
+    }
+
+
